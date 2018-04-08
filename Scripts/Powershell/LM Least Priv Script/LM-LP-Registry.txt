@@ -1,0 +1,16 @@
+HKLM:\System\CurrentControlSet\services\eventlog\Security
+HKLM:\System\CurrentControlSet\services\eventlog\Application
+HKLM:\System\CurrentControlSet\Services\WinSock2\Parameters
+HKLM:\SYSTEM\CurrentControlSet\services\scmedsvr
+HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib
+HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Perflib
+HKLM:\System\CurrentControlSet\Services\LogRhythm Mediator:Database
+HKLM:\System\CurrentControlSet\Services\LogRhythm Mediator:LDS
+HKLM:\System\CurrentControlSet\Services\LogRhythm Mediator:LogMart
+HKLM:\System\CurrentControlSet\Services\LogRhythm Mediator:Processing
+HKLM:\System\CurrentControlSet\Services\LogRhythm Mediator:Stats
+HKLM:\SYSTEM\CurrentControlSet\services\.NET CLR Data
+HKLM:\SYSTEM\CurrentControlSet\services\.NET CLR Networking
+HKLM:\SYSTEM\CurrentControlSet\services\.NET CLR Networking 4.0.0.0
+HKLM:\SYSTEM\CurrentControlSet\services\.NET Data Provider for Oracle
+HKLM:\SYSTEM\CurrentControlSet\services\.NET Data Provider for SqlServer

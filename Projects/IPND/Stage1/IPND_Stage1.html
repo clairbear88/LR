@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href=".\css-demo\style.css">
+	<title>IPND Session Notes</title>
+</head>
+
+<body>
+	<div class="Level0">
+	    <h1>Stage 1: HTML and CSS</h1>
+		<h2>Basics of HTML</h2>
+		<div class="Level1">
+			<b>HTML Documents:</b>
+	        <p class="Level2">
+	          Made up of text content, markup, references to other docs, and links to other pages.
+	        </p>
+			<b>Markup:</b>
+    		<div class="Level2">
+				<a href="https://www.udacity.com/course/viewer#!/c-nd000/l-3873828673/m-48723444">Elements:</a> &lt;tag attribute="example"&gt;text content&lt;tag&gt;<br>
+				<a href="https://www.udacity.com/course/viewer#!/c-nd000/l-3873828673/m-48723444">Tags:</a>
+				<ul class="Level3">
+            		<li><a href="https://www.udacity.com/course/viewer#!/c-nd000/l-3873828673/e-48508417/m-48723411">Links:</a> "a" with attribute href, non-void, inline</li>
+  					<li><a href="https://www.udacity.com/course/viewer#!/c-nd000/l-3873828673/m-48744041">Images:</a> "img", attr(s)=src/alt, void, inline</li>
+  					<li><a href="https://www.udacity.com/course/viewer#!/c-nd000/l-3873828673/e-48666064/m-48678767">Return:</a> "br", void, inline</li>
+  					<li><a href="https://www.udacity.com/course/viewer#!/c-nd000/l-3873828673/e-48587889/m-48723437">Paragraph:</a> "p", non-void, block</li>
+  					<li><a href="https://www.udacity.com/course/viewer#!/c-nd000/l-3873828673/e-48756004/m-48748018">Contents Style Containers:</a> "span", non-void, inline; "div", non-void, block</li>
+		    	</ul>
+    		</div>
+    		<p class="Level2">
+			  <a href="https://www.udacity.com/course/viewer#!/c-nd000/l-3873828673/m-48723438">Block v.s. Inline:</a> Block elements separates contents from the rest of contents in HTML doc, Inline leaves no separation and is inline with the rest of your content.<br>
+			  <a href="https://www.udacity.com/course/viewer#!/c-nd000/l-3873828673/e-48508416/m-48698566">Void vs. Non-Void:</a> Void tags do not require a closing tag, Non-Void do.
+		  	</p>
+			<div class="level2"><b>Misc:</b>
+				<div class="level3">
+					<ul>
+						<li>Computers are stupid...</li>
+						<li>HTML stands for Hypertext Markup Language</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h2>HTML Structured Documents</h2>
+		<div class="Level1">
+			<b>Using Chrome's Developer Tools to Inspect HTML Elements:</b>
+			<p>
+				Everything is a box.  Block Elements can be used to form an invisible box around segments of content.
+			</p>
+			<b>Tree-Structure of HTML:</b>
+			<p>
+				To give HTML Documents structure, elements can be placed into a hierarchy and segments of content can be created by nesting elements inside of elements.
+			</p>
+			<p>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">Document Object Model(DOM):</a> is a document structure standard that defines the way programs will interact with a document type.
+			</p>
+			<b>Sublime:</b>
+			<p>
+				A text editor that helps automate and visually represent many programming languages.
+			</p>
+		</div>
+	    <h2>Adding CSS Style and HTML Structure</h2>
+	    <div class="Level1">
+    		<b>Prepping your HTML Doc</b>
+    		<p class="Level2">
+    			Adding &lt;!DOCTYPE html&gt;,&lt;html&gt;, and &lt;head&gt; tags.<br>
+    			Adding a link to CSS stylesheet: &lt;link rel="stylesheet" href="docname.css"&gt;
+			</p>
+			<b>Cascading Style Sheets(CSS):</b>
+			<div class="Level2">
+				<ul>
+					<li>Uses selectors to find class or tag of an element and uses a declaration rule made up of a property and value.</li>
+					<li>Order Matters and if parent property values overlap the more specific child value is applied to the element.</li>
+					<li>Some Browsers use slightly different styles.</li>
+					<li>Style can be applied a separate document, inline in an element, or placed in &lt;style&gt; tags.</li>
+					<li>Comments are opened with /* and closed with */</li>
+				</ul>
+				<div class="Exciting">
+					YAY! Boxes:
+					<div class="screenshot">
+						<img src="images/box_model.png" alt="image not found">
+					</div>
+				</div>
+			</div>
+			<b>Verifying HTML and CSS:</b>
+			<div class="Level2">
+				<a style="color:blue;" href="http://validator.w3.org/#validate_by_input">HTML</a> and <a style="color:green;" href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a>
+			</div>
+    	</div>
+    	<h1>Stage 2: Python</h1>
+    	<h2>Strings and Variables</h2>
+    	<div class="Level1">
+			<b>Variables:</b>
+			<p class="Level2">
+    				Variables like in math are symbols or strings that are <em><u>assigned</u></em> a value.  Anytime the variable is used a computer substitutes the assigned value for the variable that was used:<br>
+				<blockquote><blockquote>
+    				<em>x=1<br>
+    				y=2<br>
+    				print x+y<br>
+    				returned value: 3</em>
+				</blockquote></blockquote>
+			</p>
+			<b>Strings:</b>
+			<p class="Level2">
+				Text contained between single quotes: 'I am a string'<br>
+				Each position of a string can be referenced by an index number using brackets: <em class='code'>'I am a string'[0:3] equals 'I am'</em><br>
+				Find function or procedure can be used to find the position of a substring of a string: <em class='code'>'I am a string'.find('string')</em><br>
+			</p>
+			<b>Putting it together:</b>
+			<p class="Level2">
+				<em class="code">stringy='I am a string'<br>
+				stringier=stringy[0:3]<br>
+				print stringier.find('am')<br>
+				returns 2</em>
+			</p>
+			<b>Input, Function, Output:</b>
+		</div>
+    </div>
+</body>
+</html>

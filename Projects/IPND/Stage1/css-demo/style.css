@@ -1,0 +1,30 @@
+/*More words*/
+*{
+	outline: 1px solid red !important;
+	font-family: Helvetica;
+}
+*{
+	-webkit-box-sizing; border-box;
+	-moz-box-sizing; border-box;
+	-ms-box-sizing; border-box;
+	-box-sizing; border-box;
+}
+
+.app{
+	display: flex;
+}
+.screenshot {
+	max-width: 20%;
+	margin-right: 3%;
+}
+.description {
+	max-width: 80%;
+	color:#7c8b88;
+}
+.image{
+	max-width: 100%;
+}
+.title{
+	Color: white;
+	background-color: #33BEBE;
+}

@@ -1,0 +1,2 @@
+REM Query local EMDB for Audited queries
+sqlcmd -S localhost -d LogRhythmEMDB -E -W -w 999 -s ',' -Q "SELECT EventDate, CriteriaInfo, FullName FROM dbo.LRQueryAuditLog, dbo.Person WHERE LRQueryAuditLog.UserID = Person.PersonID" -o "C:\LogRhythm\LRQueryAuditLog.csv"

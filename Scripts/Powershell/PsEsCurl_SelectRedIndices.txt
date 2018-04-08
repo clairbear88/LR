@@ -1,0 +1,1 @@
+.\curl.exe -s http://localhost:9200/_cat/indices?v"&"pretty | Write-Output | Select-String red
